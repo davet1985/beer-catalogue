@@ -1,13 +1,6 @@
-var beerList = {
-    '1001': {
-        abv: '4.1%',
-        description: 'Light, hoppy, citrus flavours'
-    },
-    '1002': {
-        abv: '5.2%',
-        description: 'Strong craft lager'
-    }
-};
+'use strict';
+
+var beerList = require('./data/beer-list');
 
 var getBeerDetails = function(beerCode, onSuccess, onNotFound) {
     var beer = beerList[beerCode];
